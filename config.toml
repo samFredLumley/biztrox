@@ -1,4 +1,4 @@
-baseURL = "."
+baseURL = "https://stupefied-brown-327b14.netlify.com"
 theme = "biztrox-hugo"
 summaryLength = "10"
 DefaultContentLanguage = "en"
