@@ -1,0 +1,116 @@
+{{ define "main" }}
+
+{{ partial "hero-slider.html" . }}
+
+{{ "<!-- service -->" | safeHTML }}
+<section class="section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 text-center">
+                <h5 class="section-title-sm">Best Service</h5>
+                <h2 class="section-title section-title-border">Service We Provide</h2>
+            </div>
+            {{ range $index, $element:= where .Data.Pages "Type" "service" }}
+            {{ if lt $index 3 }}
+            {{ "<!-- service item -->" | safeHTML }}
+            <div class="col-lg-4 col-sm-6 mb-5">
+                <div class="card text-center">
+                    <h4 class="card-title pt-3">{{ .Title }}</h4>
+                    <div class="card-img-wrapper">
+                        <img class="card-img-top rounded-0" src="{{ .Params.image | absURL }}" alt="service-image">
+                    </div>
+                    <div class="card-body p-0">
+                        <i class="square-icon translateY-33 rounded {{ .Params.Icon }}"></i>
+                        <p class="card-text mx-2 mb-0">{{ .Summary }}</p>
+                        <a href="{{ .Permalink }}" class="btn btn-secondary translateY-25">Read More</a>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ "<!-- /service -->" | safeHTML }}
+
+{{ partial "about.html" . }}
+
+{{ partial "skill.html" . }}
+
+{{ "<!-- work -->" | safeHTML }}
+<section class="section bg-gray">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h5 class="section-title-sm">Our Works</h5>
+                <h2 class="section-title section-title-border-gray">Latest Projects</h2>
+            </div>
+        </div>
+        {{ "<!-- work slider -->" | safeHTML }}
+        <div class="row work-slider">
+            {{ range $index, $element:= where .Data.Pages "Type" "project"}}
+            {{ "<!-- project item -->" | safeHTML }}
+            <div class="col-lg-3 col-md-4 col-sm-6 p-0">
+                <div class="position-relative">
+                    <img class="img-fluid w-100" src="{{ .Params.Image | absURL }}" alt="project-image">
+                    <div class="project-info">
+                        <a href="{{ .Permalink }}" class="h4">{{ .Title }}</a>
+                        <p><i class="ti-tag"></i>{{ .Params.Tag }}</p>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ "<!-- /work -->" | safeHTML }}
+
+{{ partial "mission.html" . }}
+
+{{ partial "promoVideo.html" . }}
+
+{{ partial "testimonial.html" . }}
+
+{{ partial "cta.html" . }}
+
+{{ "<!-- blog -->" | safeHTML }}
+<section class="section bg-gray">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 text-center">
+                <h5 class="section-title-sm">Latest News</h5>
+                <h2 class="section-title section-title-border-gray">Company News</h2>
+            </div>
+            
+            {{ range $index, $element:= where .Data.Pages "Type" "post" }}
+            {{ if lt $index 3}}
+            {{ "<!-- blog-item -->" | safeHTML }}
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <article class="card">
+                    <div class="card-img-wrapper overlay-rounded-top">
+                        <img class="card-img-top" src="{{ .Params.image | absURL }}" alt="blog-thumbnail">
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="d-flex">
+                            <div class="py-3 px-4 border-right text-center">
+                                <h3 class="text-primary mb-0">{{ .PublishDate.Format "02" }}</h3>
+                                <p class="mb-0">{{ .PublishDate.Format "Jan" }}</p>
+                            </div>
+                            <div class="p-3">
+                                <a href="{{ .Permalink }}" class="h4 font-primary text-dark">{{ .Title }}</a>
+                                <p>by {{ .Params.Author }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            {{ end }}
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ "<!-- /blog -->" | safeHTML }}
+
+{{ partial "clientsLogoSlider.html" . }}
+
+{{ end }}

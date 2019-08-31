@@ -1,0 +1,119 @@
+{{ "<!-- team single -->" | safeHTML }}
+<section class="section">
+    <div class="container">
+        <div class="row">
+            {{ "<!-- sidebar -->" | safeHTML }}
+            <aside class="col-lg-4">
+                {{ "<!-- team member info -->" | safeHTML }}
+                <div class="bg-gray rounded mb-50">
+                    <img class="img-fluid w-100 rounded-top" src="{{ .Params.Image | absURL }}" alt="team member">
+                    <div class="py-2 px-4 pb-3">
+                        <div class="py-3 border-bottom">
+                            <p class="d-inline-block font-primary m-0">
+                                <i class="mr-2 ti-notepad"></i>Projects Done</p>
+                            <span class="font-weight-bold text-dark float-right">{{ .Params.ProjectDone }}</span>
+                        </div>
+                        <div class="py-3 border-bottom">
+                            <p class="d-inline-block font-primary m-0">
+                                <i class="mr-2 ti-medall"></i>Success Rate</p>
+                            <span class="font-weight-bold text-dark float-right">{{ .Params.SuccessRate }}</span>
+                        </div>
+                        <div class="py-3 border-bottom">
+                            <p class="d-inline-block font-primary m-0">
+                                <i class="mr-2 ti-flag-alt"></i>Experience Of</p>
+                            <span class="font-weight-bold text-dark float-right">{{ .Params.ExperienceOf }}</span>
+                        </div>
+                        <div class="py-3">
+                            <p class="d-inline-block font-primary m-0">
+                                <i class="mr-2 ti-location-pin"></i>From</p>
+                            <span class="font-weight-bold text-dark float-right">{{ .Params.From }}</span>
+                        </div>
+                    </div>
+                </div>
+                {{ "<!-- Brochure -->" | safeHTML }}
+                <div class="rounded border py-3 px-4 mb-50">
+                    <i class="d-inline-block mr-1 text-dark ti-files" style="font-size: 20px;"></i>
+                    <h4 class="mb-1 d-inline-block">Professional CV</h4>
+                    <a class="font-secondary text-color d-block ml-4" href="{{ .Params.CvURL | absURL }}">Download pdf</a>
+                </div>
+            </aside>
+            {{ "<!-- /sidebar -->" | safeHTML }}
+
+            {{ "<!-- team member details -->" | safeHTML }}
+            <div class="col-lg-8">
+                <div>
+                    <h2>{{ .Title }}</h2>
+                    <h6 class="text-primary mb-30">{{ .Params.Designation }}</h6>
+                    <p class="mb-40">{{ .Params.Description }}</p>
+                    <div class="row">
+                        {{ "<!-- contact info -->" | safeHTML }}
+                        <div class="col-md-6">
+                            <h4>Contact Information</h4>
+                            <ul class="pl-0 mb-40">
+                                <li class="font-secondary text-color my-3">
+                                    <i class="mr-3 ti-mobile"></i>{{ .Params.Mobile }}
+                                </li>
+                                <li class="font-secondary text-color my-3">
+                                    <i class="mr-3 ti-email"></i>{{ .Params.Email }}</li>
+                                <li class="font-secondary text-color my-3">
+                                    <i class="mr-3 ti-location-pin"></i>{{ .Params.Location }}</li>
+                            </ul>
+                        </div>
+                        {{ "<!-- social icon -->" | safeHTML }}
+                        <div class="col-md-6 mb-4 mb-md-0">
+                            <h4 class="mb-20">Follow on Social</h4>
+                            <ul class="list-inline">
+                                <li class="list-inline-item mr-2">
+                                    <a class="social-icon-lg bg-facebook" href="{{ .Params.facebookURL | absURL }}">
+                                        <i class="ti-facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item mx-2">
+                                    <a class="social-icon-lg bg-twitter" href="{{ .Params.twitterURL | absURL }}">
+                                        <i class="ti-twitter-alt"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item mx-2">
+                                    <a class="social-icon-lg bg-linkedin" href="{{ .Params.linkedinURL | absURL }}">
+                                        <i class="ti-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item mx-2">
+                                    <a class="social-icon-lg bg-google" href="{{ .Params.googlePlusURL | absURL }}">
+                                        <i class="ti-google"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    {{ .Content }}
+                </div>
+                <div class="progressbar">
+                    <h5 class="progressbar-title">Branding</h5>
+                    <div class="progress" data-percent="{{ .Params.Branding }}">
+                        <div class="progress-bar progress-bar-striped" style="width: {{ .Params.Branding }};">
+                            <div class="progress-bar-value">{{ .Params.Branding }}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="progressbar">
+                    <h5 class="progressbar-title">Consulting</h5>
+                    <div class="progress" data-percent="{{ .Params.Consulting }}">
+                        <div class="progress-bar progress-bar-striped" style="width: {{ .Params.Consulting }};">
+                            <div class="progress-bar-value">{{ .Params.Consulting }}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="progressbar">
+                    <h5 class="progressbar-title">Business</h5>
+                    <div class="progress" data-percent="{{ .Params.Business }}">
+                        <div class="progress-bar progress-bar-striped" style="width: {{ .Params.Business }};">
+                            <div class="progress-bar-value">{{ .Params.Business }}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ "<!-- /team single -->" | safeHTML }}

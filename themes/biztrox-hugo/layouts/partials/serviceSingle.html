@@ -1,0 +1,36 @@
+{{ "<!-- service single -->" | safeHTML }}
+<section class="section">
+    <div class="container">
+        <div class="row">
+            {{ "<!-- sidebar -->" | safeHTML }}
+            <aside class="col-lg-4 order-lg-1 order-2">
+                {{ "<!-- Brochure -->" | safeHTML }}
+                <div class="rounded border py-3 px-4 mb-50">
+                    <i class="d-inline-block mr-1 text-dark ti-files" style="font-size: 20px;"></i>
+                    <h4 class="mb-1 d-inline-block"> Service Brochure</h4>
+                    <a class="font-secondary text-color d-block ml-4" href="{{ .Params.BrochureURL | absURL }}">Download pdf</a>
+                </div>
+                {{ "<!-- Opening Hours -->" | safeHTML }}
+                <div class="mb-50">
+                    <h5 class="mb-20">Opening Hours</h5>
+                    <ul class="pl-0 border rounded px-4 py-3">
+                        <li class=" font-secondary my-3 text-color">
+                            <span class="d-inline-block font-weight-light text-dark" style="width: 130px;">{{ .Params.RegularDay }}:</span>{{ .Params.RegularTime }}</li>
+                        <li class=" font-secondary my-3 text-color">
+                            <span class="d-inline-block font-weight-light text-dark" style="width: 130px;">{{ .Params.HalfDay }}:</span>{{ .Params.HalfTime }}</li>
+                        <li class="text-danger font-secondary my-3">
+                            <span class="d-inline-block font-weight-light text-dark" style="width: 130px;">{{ .Params.OffDay }}:</span>Closed</li>
+                    </ul>
+                </div>
+            </aside>
+            {{ "<!-- service single content -->" | safeHTML }}
+            <div class="col-lg-8 order-lg-2 order-1">
+                <img class="img-fluid w-100 mb-60 rounded-top" src="{{ .Params.Image | absURL }}" alt="service">
+                <div class="post-content">
+                    {{ .Content }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ "<!-- /service single -->" | safeHTML }}

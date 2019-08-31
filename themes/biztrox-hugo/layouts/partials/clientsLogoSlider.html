@@ -1,0 +1,14 @@
+{{ if .Site.Params.logoSlider.enable }}
+{{ "<!-- client logo slider -->" | safeHTML}}
+<section class="bg-gray py-4">
+    <div class="container">
+        <div class="client-logo-slider align-self-center">
+            {{ range .Site.Params.logoSlider.sliderItem }}
+            <a href="{{ .URL | absURL }}" class="text-center d-block outline-0 py-3 px-2"><img class="d-unset" src="{{ .image | absURL }}"
+                    alt="client-logo"></a>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ "<!-- /client logo slider -->" | safeHTML}}
+{{ end }}

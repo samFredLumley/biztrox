@@ -1,0 +1,33 @@
+{{ if .Site.Params.about.enable }}
+{{ "<!-- about -->" | safeHTML }}
+<section class="about section-sm overlay" style="background-image: url('{{ .Site.Params.about.bgImage | absURL }}');">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 ml-auto">
+                <div class="rounded p-sm-5 px-3 py-5 bg-secondary">
+                   {{ with .Site.Params.about.title }} <h3 class="section-title section-title-border-half text-white">{{ . }}</h3> {{ end }}
+                   {{ with .Site.Params.about.description }} <p class="text-white mb-40">{{ . }}</p> {{ end }}
+                    <div>
+                        <ul class="d-inline-block pl-0 float-sm-left mr-sm-5">
+                            {{ range .Site.Params.about.listLeft }}
+                            <li class="font-secondary mb-10 text-white">
+                                <i class="text-primary mr-2 ti-arrow-circle-right"></i>{{ .listItem }}</li>
+                            {{ end }}
+                        </ul>
+                        <ul class="d-inline-block pl-0">
+                            {{ range .Site.Params.about.listRight }}
+                            <li class="font-secondary mb-10 text-white">
+                                <i class="text-primary mr-2 ti-arrow-circle-right"></i>{{ .listItem }}</li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                    {{ if .Site.Params.about.btn.enable }}
+                    <a href="{{ .Site.Params.about.btn.btnURL | absURL }}" class="btn btn-primary mt-4">{{ with .Site.Params.about.btn.btnText }} {{ . }} {{ end }}</a>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ "<!-- /about -->" | safeHTML }}
+{{ end }}

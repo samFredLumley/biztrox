@@ -1,0 +1,45 @@
+enable : true
+heading : Pricing For You
+content : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <br> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+pricingItem : 
+  - title : Starter
+    icon : ti-gift
+    value : $25
+    validity : month
+    btnText : Buy Now
+    btnURL : '#'
+    serviceList : 
+      - listItem : Business Services
+      - listItem : Social Madei Marketing
+      - listItem : 24/7 Professional Support
+      - listItem : Online Consultancy
+      - listItem : Seminar & Symphoseum
+      - listItem : Limited Features
+      
+  - title : Premium
+    icon : ti-key
+    value : $129
+    validity : month
+    btnText : Buy Now
+    btnURL : '#'
+    serviceList : 
+      - listItem : Business Services
+      - listItem : Social Madei Marketing
+      - listItem : 24/7 Professional Support
+      - listItem : Online Consultancy
+      - listItem : Seminar & Symphoseum
+      - listItem : Limited Features
+      
+  - title : Platinum
+    icon : ti-medall
+    value : $229
+    validity : month
+    btnText : Buy Now
+    btnURL : '#'
+    serviceList : 
+      - listItem : Business Services
+      - listItem : Social Madei Marketing
+      - listItem : 24/7 Professional Support
+      - listItem : Online Consultancy
+      - listItem : Seminar & Symphoseum
+      - listItem : Limited Features

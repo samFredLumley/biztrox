@@ -1,0 +1,38 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ if $data.satisfiedClients.enable }}
+{{ "<!-- clients -->" | safeHTML }}
+<section class="clients section bg-secondary overlay-dark" style="background-image: url('{{ $data.satisfiedClients.bgImage | absURL }}');">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+               {{ with $data.satisfiedClients.titleSM }} <h5 class="section-title-sm text-color">{{ . }}</h5> {{ end }}
+               {{ with $data.satisfiedClients.title }} <h2 class="text-white mb-20">{{ . }}</h2> {{ end }}
+               {{ with $data.satisfiedClients.content }} <p class="text-white">{{ . }}</p> {{ end }}
+            </div>
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-6">
+                        <ul class="pl-0">
+                            {{ range $data.satisfiedClients.clientsLogoLeft }}
+                            <li class="text-center mb-3">
+                                <img src="{{ .logo | absURL }}" alt="client-logo">
+                            </li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <ul>
+                            {{ range $data.satisfiedClients.clientsLogoRight }}
+                            <li class="text-center mb-3">
+                                <img src="{{ .logo | absURL }}" alt="client-logo">
+                            </li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ "<!-- /clients -->" | safeHTML }}
+{{ end }}

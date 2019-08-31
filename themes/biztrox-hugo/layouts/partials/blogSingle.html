@@ -1,0 +1,50 @@
+{{ "<!-- blog single -->" | safeHTML }}
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 py-100">
+                <div class="border rounded bg-white">
+                    <img class="img-fluid w-100 rounded-top" src="{{ .Params.image | absURL }}" alt="blog-image">
+                    <div class="p-4">
+                        <h3>{{ .Title }}</h3>
+                        <ul class="list-inline d-block pb-4 border-bottom mb-3">
+                            <li class="list-inline-item text-color">Posted By {{ .Params.Author }}</li>
+                            <li class="list-inline-item text-color">On {{ .PublishDate.Format "02 Jan" }}</li>
+                            <li class="list-inline-item text-color">Tag:
+                                {{ range .Params.Tags }}
+                                <a class="text-color" href="{{ "tags/" | absURL }}{{ . | lower }}">{{ . }}</a>
+                                {{ end }}
+                            </li>
+                        </ul>
+                        <div class="post-content">
+                            {{ .Content }}
+                        </div>
+                    </div>
+                </div>
+                <div class="py-4 border-bottom mb-100">
+                    <div class="row">
+                        <div class="col-lg-5 mb-4 mb-lg-0">
+                            {{ "<!-- share-icon -->" | safeHTML }}
+                            <div class="d-flex">
+                                <span class="font-weight-light mt-2 mr-3">Share:</span>
+                                <ul class="list-inline d-inline-block">
+                                    {{ range .Site.Params.sharePost }}
+                                    <li class="list-inline-item">
+                                        <a class="share-icon bg-secondary" href="{{ .URL | absURL }}">
+                                            <i class="{{ .icon }}"></i>
+                                        </a>
+                                    </li>
+                                    {{ end }}
+                                </ul>
+                            </div>
+                        </div>
+                        {{ "<!-- tags -->" | safeHTML }}
+                        </div>
+                    </div>
+                </div>
+                {{ partial "sidebar.html" . }}
+            </div>
+        </div>
+    </div>
+</section>
+{{ "<!-- /blog-single -->" | safeHTML }}

@@ -1,0 +1,16 @@
+{{ if .Site.Params.cta.enable }}
+{{ "<!-- cta -->" | safeHTML }}
+<section class="cta overlay-primary py-50 text-center text-lg-left" style="background-image: url('{{ .Site.Params.cta.bgImage | absURL }}');">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-lg-6">
+               {{ with .Site.Params.cta.title }} <h3 class="text-white">{{ . }}</h3> {{ end }}
+            </div>
+            <div class="col-lg-6 text-lg-right align-self-center">
+                <a href="{{ .Site.Params.cta.btnURL | absURL }}" class="btn btn-light text-uppercase"> {{ with .Site.Params.cta.btnText }}{{ . }}{{ end }}</a>
+            </div>
+        </div>
+    </div>
+</section>
+{{ "<!-- /cta -->" | safeHTML }}
+{{ end }}

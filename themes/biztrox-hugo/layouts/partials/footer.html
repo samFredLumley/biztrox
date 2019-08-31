@@ -1,0 +1,121 @@
+{{ "<!-- footer -->" | safeHTML }}
+<footer class="bg-secondary">
+    <div class="py-100 border-bottom" style="border-color: #454547 !important">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <div class="mb-5 mb-md-0 text-center text-md-left">
+                        {{ "<!-- logo -->" | safeHTML }}
+                        <img class="mb-30" src="{{ .Site.Params.footer.logo | absURL }}" alt="logo">
+                       {{ with .Site.Params.footer.content }} <p class="text-white mb-30"> {{ . }}</p> {{ end }}
+                        {{ "<!-- social icon -->" | safeHTML }}
+                        <ul class="list-inline">
+                            {{ range .Site.Params.footer.socialIcon }}
+                            <li class="list-inline-item">
+                                <a class="social-icon-outline" href="{{ .URL | absURL }}">
+                                    <i class="{{ .icon }}"></i>
+                                </a>
+                            </li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                </div>
+                {{ "<!-- footer links -->" | safeHTML }}
+                <div class="col-lg-2 col-md-4 col-6">
+                   {{ with .Site.Params.footer.services}} <h4 class="text-white mb-4">{{ . }}</h4>{{ end }}
+                    <ul class="footer-links">
+                        {{ range .Site.Params.footer.service}}
+                        <li>
+                            <a href="{{ .URL | absURL }}">{{ .serviceItem }}</a>
+                        </li>
+                        {{ end }}
+                    </ul>
+                </div>
+                {{ "<!-- footer links -->" | safeHTML }}
+                <div class="col-lg-2 col-md-4 col-6">
+                    {{ with .Site.Params.footer.quickLink}} <h4 class="text-white mb-4">{{ . }}</h4>{{ end }}
+                    <ul class="footer-links">
+                        {{ range .Site.Params.footer.quickLinks}}
+                        <li>
+                            <a href="{{ .URL | absURL }}">{{ .quickLinkItem }}</a>
+                        </li>
+                        {{ end }}
+                    </ul>
+                </div>
+                {{ "<!-- subscribe form -->" | safeHTML }}
+                <div class="col-lg-3 col-md-12 offset-lg-1">
+                    <div class="mt-5 mt-lg-0 text-center text-md-left">
+                            {{ with .Site.Params.footer.subscribe}} <h4 class="mb-4 text-white">{{ . }}</h4> {{ end }}
+                            {{ with .Site.Params.footer.subscribeContent}} <p class="text-white mb-4">{{ . }}</p> {{ end }}
+                        <form action="#" class="position-relative">
+                            <input type="text" class="form-control subscribe" name="subscribe" id="Subscribe"
+                                placeholder="Enter Your Email">
+                            <button class="btn-subscribe" type="submit" value="send">
+                                <i class="ti-arrow-right"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{ "<!-- copyright -->" | safeHTML }}
+    <div class="pt-4 pb-3 position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-5">
+                    <p class="text-white text-center text-md-left">
+                       {{ with .Site.Params.footer.copyright }} <span class="text-primary">{{ . | safeHTML }}</p> {{ end }}
+                </div>
+                <div class="col-lg-6 col-md-7">
+                    <ul class="list-inline text-center text-md-right">
+                        {{ range .Site.Params.footer.links }}
+                        <li class="list-inline-item mx-lg-3 my-lg-0 mx-2 my-2">
+                            <a class="font-secondary text-white" href="{{ .URL | absURL }}">{{ .name }}</a>
+                        </li>
+                        {{ end }}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        {{ "<!-- back to top -->" | safeHTML }}
+        <button class="back-to-top">
+            <i class="ti-angle-up"></i>
+        </button>
+    </div>
+</footer>
+{{ "<!-- /footer -->" | safeHTML }}
+
+{{ "<!-- jQuery -->" | safeHTML }}
+<script src="{{ "plugins/jQuery/jquery.min.js" | absURL }}"></script>
+{{ "<!-- Bootstrap JS -->" | safeHTML }}
+<script src="{{ "plugins/bootstrap/bootstrap.min.js" | absURL }}"></script>
+{{ "<!-- magnific popup -->" | safeHTML }}
+<script src="{{ "plugins/magnific-popup/jquery.magnific.popup.min.js" | absURL }}"></script>
+{{ "<!-- slick slider -->" | safeHTML }}
+<script src="{{ "plugins/slick/slick.min.js" | absURL }}"></script>
+{{ "<!-- filter -->" | safeHTML }}
+<script src="{{ "plugins/filterizr/jquery.filterizr.min.js" | absURL }}"></script>
+{{ "<!-- Google Map -->" | safeHTML }}
+<script src="{{ .Site.Params.gmapAPI | absURL }}"></script>
+<script src="{{ "plugins/google-map/gmap.js" | absURL }}"></script>
+{{ "<!-- Syo Timer -->" | safeHTML }}
+<script src="{{ "plugins/syotimer/jquery.syotimer.js" | absURL }}"></script>
+{{ "<!-- aos -->" | safeHTML }}
+<script src="{{ "plugins/aos/aos.js" | absURL }}"></script>
+{{ "<!-- Main Script -->" | safeHTML }}
+{{ $script := resources.Get "js/script.js" | minify}}
+<script src="{{ $script.Permalink }}"></script>
+{{ "<!-- google analitycs -->" | safeHTML }}
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', '{{ .Site.Params.googleAnalitycsID }}', 'auto');
+    ga('send', 'pageview');
+</script>
+
+</body>
+
+</html>

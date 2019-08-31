@@ -1,0 +1,39 @@
+philosophy :
+  enable : true
+  titleSM : Know About
+  title : Our Philosophy
+  content : Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor didunt laboris nisi ut aliquip ex commodo consequat. duis aute irure dolor in reprehenderivoluptate velit esse cillum dolore fugiat nulla pariatur.Excepteur sint ocaecat cupidatat noproident sunt culpa qui officia deserunt mollit anim id est laborum.<br> Sed perspiciatis unde omnisiste natus error sit voluptatem accusantium.doloremque ladantium totam rem aperieaque ipsa quae ab illo inventore.veritatis. et quasi architecto beatae vitae dicta sunt explicabo.
+  image : images/about/philosophy.jpg
+  btn :
+    enable : true
+    btnText : Explore More
+    btnURL : "#"
+
+ceo :
+  enable : true
+  bgImage : images/about/ceo.jpg
+  title : We are efficient to <br> make your business rise
+  content : Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor didunt laboris nisi ut aliquip ex commodo consequat. duis aute irure dolor in reprehenderit voluptate velit esse cillum dolore fugiat nulla pariatur.Excepteur sint ocaecat cupidatat non proident sunt culpa qui officia deserunt mollit anim id est laborum.
+  signature : images/about/ceo-signature.png
+  name : John Doe
+  designation : CEO
+
+funfacts : 
+  enable : true
+  bgImage : images/background/cta.jpg
+  counter : 
+    - title : Projects Done
+      icon : ti-server
+      count : 230
+      
+    - title : Satisfied Clients
+      icon : ti-face-smile
+      count : 789
+      
+    - title : Cup Of Coffee
+      icon : ti-thumb-up
+      count : 580
+      
+    - title : Awards Win
+      icon : ti-cup
+      count : 130

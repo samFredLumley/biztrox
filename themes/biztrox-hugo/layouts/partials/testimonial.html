@@ -1,0 +1,31 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ if $data.testimonial.enable }}
+{{ "<!-- testimonial -->" | safeHTML }}
+<section class="section pb-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+               {{ with $data.testimonial.titleSM }} <h5 class="section-title-sm">{{ . }}</h5> {{ end }}
+               {{ with $data.testimonial.title }} <h2 class="section-title section-title-border"> {{ . }} </h2> {{ end }}
+            </div>
+            <div class="col-lg-5 col-md-5 pr-0 align-self-center">
+                <img class="img-fluid w-100" src="{{ $data.testimonial.image | absURL }}" alt="clients-image">
+            </div>
+            <div class="col-lg-7 col-md-7 align-self-center pl-0">
+                <div class="testimonial-slider p-5">
+                    {{ "<!-- slider item -->" | safeHTML }}
+                    {{ range $data.testimonial.sliderItem }}
+                    <div>
+                        <i class="testimonial-icon {{ .icon }}"></i>
+                        <p class="text-dark">{{ .content }}</p>
+                        <h4 class="font-weight-normal">{{ .name }}</h4>
+                        <h6 class="font-secondary text-color">{{ .designation }}</h6>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ "<!-- /testimonial -->" | safeHTML }}
+{{ end }}

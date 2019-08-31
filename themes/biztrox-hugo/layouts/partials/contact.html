@@ -1,0 +1,54 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ if $data.contact.enable }}
+{{ "<!-- contact -->" | safeHTML }}
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 offset-lg-1 col-md-5">
+               {{ with $data.contact.title }} <h2 class="section-title">{{ . }}</h2> {{ end }}
+                <ul class="pl-0">
+                    {{ range $data.contact.contactList }}
+                    {{ "<!-- contact items -->" | safeHTML }}
+                    <li class="d-flex mb-30">
+                        <i class="round-icon mr-3 {{ .icon }}"></i>
+                        <div class="align-self-center font-primary">
+                            <p>{{ .listItem1 }}</p>
+                            <p>{{ .listItem2 }}</p>
+                        </div>
+                    </li>
+                    {{ end }}
+                </ul>
+            </div>
+            {{ "<!-- form -->" | safeHTML }}
+            <div class="col-lg-6 col-md-7">
+                <div class="p-5 rounded box-shadow">
+                    <form action="#" class="row">
+                        <div class="col-lg-12">
+                            {{ with $data.contact.formTitle }} <h3 class="mb-4">{{ . }}</h3> {{ end }}
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Name" required>
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Email Address"
+                                required>
+                        </div>
+                        <div class="col-lg-12">
+                            <input type="text" name="subject" id="subject" class="form-control" placeholder="Subject"
+                                required>
+                        </div>
+                        <div class="col-lg-12">
+                            <textarea class="form-control p-2" name="message" id="message" placeholder="Your Message Here..."
+                                required style="height: 150px;"></textarea>
+                        </div>
+                        <div class="col-lg-12">
+                            {{ with $data.contact.btnText }} <button class="btn btn-primary" type="submit" value="send">{{ . }}</button> {{ end }}
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ "<!-- /contact -->" | safeHTML }}
+{{ end }}

@@ -1,0 +1,16 @@
+enable : true
+title : Contact Us
+formTitle : Contact Form
+btnText : Submit Now
+contactList : 
+  - icon : ti-mobile
+    listItem1 : +88 0123 456 789
+    listItem2 : +88 987 654 3210
+    
+  - icon : ti-email
+    listItem1 : info@biztrox.com
+    listItem2 : biztrox@email.com
+    
+  - icon : ti-map-alt
+    listItem1 : 24/B Garden Street.
+    listItem2 : Northambia, Weals, UK

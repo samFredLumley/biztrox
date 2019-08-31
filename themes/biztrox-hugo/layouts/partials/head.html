@@ -1,0 +1,33 @@
+<head>
+    <meta charset="utf-8">
+    <title>{{ .Site.Title }}</title>
+
+    {{ "<!-- mobile responsive meta -->" | safeHTML }}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
+    {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+    {{ hugo.Generator }}
+
+    {{ "<!-- Bootstrap -->" | safeHTML }}
+    <link rel="stylesheet" href="{{ "plugins/bootstrap/bootstrap.min.css" | absURL }} ">
+    {{ "<!-- magnific popup -->" | safeHTML }}
+    <link rel="stylesheet" href="{{ "plugins/magnific-popup/magnific-popup.css" | absURL }} ">
+    {{ "<!-- Slick Carousel -->" | safeHTML }}
+    <link rel="stylesheet" href="{{ "plugins/slick/slick.css" | absURL }} ">
+    <link rel="stylesheet" href="{{ "plugins/slick/slick-theme.css" | absURL }} ">
+    {{ "<!-- themify icon -->" | safeHTML }}
+    <link rel="stylesheet" href="{{ "plugins/themify-icons/themify-icons.css" | absURL }} ">
+    {{ "<!-- animate -->" | safeHTML }}
+    <link rel="stylesheet" href="{{ "plugins/animate/animate.css" | absURL }} ">
+    {{ "<!-- Aos -->" | safeHTML }}
+    <link rel="stylesheet" href="{{ "plugins/aos/aos.css" | absURL }} ">
+    {{ "<!-- Main Stylesheet -->" | safeHTML }}
+    {{ $styles := resources.Get "css/style.css" | minify}}
+    <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
+
+    {{ "<!--Favicon-->" | safeHTML }}
+    <link rel="shortcut icon" href="{{ "images/favicon.png" | absURL }} " type="image/x-icon">
+    <link rel="icon" href="{{ "images/favicon.png" | absURL }} " type="image/x-icon">
+
+</head>

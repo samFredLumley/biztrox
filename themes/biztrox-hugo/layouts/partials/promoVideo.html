@@ -1,0 +1,19 @@
+{{ if .Site.Params.promoVideo.enable }}
+{{ "<!-- promo-video -->" | safeHTML }}
+<section class="promo-video overlay section" style="background-image: url('{{ .Site.Params.promoVideo.bgImage | absURL }}');">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+               {{ with .Site.Params.promoVideo.heading }} <h1 class="text-white mb-20 font-weight-normal">{{ . |safeHTML }}</h1> {{ end }}
+                <div class="d-flex">
+                    <a class="popup-youtube play-icon mr-4" href="{{ .Site.Params.promoVideo.videoURL | absURL}}">
+                        <i class="ti-control-play"></i>
+                    </a>
+                    {{ with .Site.Params.promoVideo.title }} <p class="text-white align-self-center h4">{{ . | safeHTML }}</p> {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ "<!-- /promo-video -->" | safeHTML }}
+{{ end }}

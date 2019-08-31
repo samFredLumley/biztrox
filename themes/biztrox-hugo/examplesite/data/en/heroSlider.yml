@@ -1,0 +1,45 @@
+enable : true
+sliderItem:
+  - subHeading : We are here to
+    heading : Planning Business
+    description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
+    bgImage : images/banner/banner-1.jpg
+    dataIcon : ti-comments
+    dataText : Consultation
+    btn : 
+      enable : true
+      btnText: More details
+      btnURL : '#'
+      
+  - subHeading : Get your
+    heading : Business Consultant
+    description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
+    bgImage : images/banner/banner-2.jpg
+    dataIcon : ti-bar-chart
+    dataText : Marketting
+    btn : 
+      enable : true
+      btnText: More details
+      btnURL : '#'
+      
+  - subHeading : Start your
+    heading : Future Plan
+    description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
+    bgImage : images/banner/banner-3.jpg
+    dataIcon : ti-money
+    dataText : Finance
+    btn : 
+      enable : true
+      btnText: More details
+      btnURL : '#'
+      
+  - subHeading : We are always
+    heading : Be Inspired By Best
+    description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
+    bgImage : images/banner/banner-4.jpg
+    dataIcon : ti-package
+    dataText : Human Resources
+    btn : 
+      enable : true
+      btnText: More details
+      btnURL : '#'

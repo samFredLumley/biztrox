@@ -1,0 +1,17 @@
+title : Our Projects
+content : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <br> tempor incididunt ut labore et dolore magna aliqua.
+filterList : 
+  - filterTitle : Marketing Online
+    dataFilter : Marketing-Online
+
+  - filterTitle : Business Strategy
+    dataFilter : Business-Strategy
+    
+  - filterTitle : Ecomerce Advice
+    dataFilter : Ecomerce-Advice
+    
+  - filterTitle : Dynamic Development
+    dataFilter : Dynamic-Development
+    
+  - filterTitle : Financing
+    dataFilter : Financing

@@ -1,0 +1,544 @@
+baseURL = "http://demo.themefisher.com/"
+theme = "biztrox-hugo"
+summaryLength = "10"
+DefaultContentLanguage = "en"
+disableLanguages = [""] # desable language from here
+
+[params]
+logo = "images/logo.png"
+mail = "info@companyname.com"
+mobile = "1234565523"
+# Meta data
+description = "Airspace Hugo theme"
+author = "themefisher"
+# google map
+gmapAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"
+mapLatitude = "51.5223477"
+mapLongitude = "-0.1622023"
+mapMarker = "images/marker.png"
+# Google Analitycs
+googleAnalitycsID = "Your ID"
+
+# mailchimp subsciption
+mailchimpFormAction = "https://themefisher.us9.list-manage.com/subscribe/post?u=f95ece2732a6e9925f2e70a61&amp;id=b1e227529e" # replace this url with yours
+mailchimpFormName = "b_f95ece2732a6e9925f2e70a61_b1e227529e" # replace this code with yours
+
+
+
+[Language]
+  
+  # English
+  [Languages.en]
+  languageName = "En"
+  languageCode = "en-us"
+  weight = 1
+  title = "Biztrox"
+  home = "Home"
+
+  # navigation
+  [Languages.en.menu]
+      
+    [[Languages.en.menu.nav]]
+    name = "About"
+    URL = "/about"
+    weight = 2
+    
+    [[Languages.en.menu.nav]]
+    name = "Service"
+    URL = "/service"
+    weight = 3
+    
+    [[Languages.en.menu.nav]]
+    name = "Blog"
+    URL = "/blog"
+    weight = 4
+    
+    [[Languages.en.menu.nav]]
+    name = "Team"
+    URL = "/team"
+    weight = 6
+    
+    [[Languages.en.menu.nav]]
+    name = "Pricing"
+    URL = "/pricing"
+    weight = 7
+    
+    [[Languages.en.menu.nav]]
+    name = "Contact"
+    URL = "/contact"
+    weight = 8
+
+    [[Languages.en.menu.nav]]
+    weight = 9
+    name = "Pages"
+    hasChildren = true
+
+      [[Languages.en.menu.nav]]
+      parent = "Pages"
+      name = "Project"
+      URL = "/project"
+
+
+      # Quote Button
+      [Languages.en.params.quoteBtn]
+      enable = true
+      btnText = "get a quote"
+      btnURL = "#"
+
+      # about
+      [Languages.en.params.about]
+      enable = true
+      bgImage = "images/background/about-bg.jpg"
+      title = "Who We Are?"
+      description = "Excepteur sint occaecat cupidatat non proident sunt culpa qui officia deserunt mollit anim id est laborum."
+      [Languages.en.params.about.btn]
+      enable = true
+      btnText = "Explore More"
+      btnURL = "#"
+
+        [[Languages.en.params.about.listLeft]]
+        listItem = "Business Services"
+
+        [[Languages.en.params.about.listLeft]]
+        listItem = "Audit & Assurance"
+        
+        [[Languages.en.params.about.listLeft]]
+        listItem = "IT Control Solutions"
+
+        [[Languages.en.params.about.listRight]]
+        listItem = "Business Services"
+
+        [[Languages.en.params.about.listRight]]
+        listItem = "Audit & Assurance"
+        
+        [[Languages.en.params.about.listRight]]
+        listItem = "IT Control Solutions"
+
+      # promo video
+      [Languages.en.params.promoVideo]
+      enable = true
+      heading = "We Are Alawys <br> Comited"
+      bgImage = "images/background/promo-video.jpg"
+      videoURL = "https://www.youtube.com/watch?v=6ZfuNTqbHE8"
+      title = "Lorem ipsum dolor <br> sit amet con."
+
+      # cta
+      [Languages.en.params.cta]
+      enable = true
+      bgImage = "images/background/cta.jpg"
+      title = "Biztrox give the smart solution for your business"
+      btnText = "get a quote"
+      btnURL = "#"
+
+      # clients Logo Slider
+      [Languages.en.params.logoSlider]
+      enable = true
+        [[Languages.en.params.logoSlider.sliderItem]]
+        image = "images/client-logo/client-logo-1.png"
+        URL = "#"
+        
+        [[Languages.en.params.logoSlider.sliderItem]]
+        image = "images/client-logo/client-logo-2.png"
+        URL = "#"
+        
+        [[Languages.en.params.logoSlider.sliderItem]]
+        image = "images/client-logo/client-logo-3.png"
+        URL = "#"
+        
+        [[Languages.en.params.logoSlider.sliderItem]]
+        image = "images/client-logo/client-logo-4.png"
+        URL = "#"
+        
+        [[Languages.en.params.logoSlider.sliderItem]]
+        image = "images/client-logo/client-logo-5.png"
+        URL = "#"
+        
+        [[Languages.en.params.logoSlider.sliderItem]]
+        image = "images/client-logo/client-logo-1.png"
+        URL = "#"
+        
+        [[Languages.en.params.logoSlider.sliderItem]]
+        image = "images/client-logo/client-logo-2.png"
+        URL = "#"
+        
+        [[Languages.en.params.logoSlider.sliderItem]]
+        image = "images/client-logo/client-logo-3.png"
+        URL = "#"
+        
+        [[Languages.en.params.logoSlider.sliderItem]]
+        image = "images/client-logo/client-logo-4.png"
+        URL = "#"
+        
+        [[Languages.en.params.logoSlider.sliderItem]]
+        image = "images/client-logo/client-logo-5.png"
+        URL = "#"
+
+      # footer
+      [Languages.en.params.footer]
+      logo = "images/logo-footer.png"
+      content = "Lorem ipsum dolor amet consectetur adipisicing elit sed eiusm tempor incididunt labore dolore magna aliqua enim."
+
+      # service links
+      services = "Services"
+      
+      # quickLinks
+      quickLink = "Quick Link"
+
+      # subscribe
+      subscribe = "Subscribe Us"
+      subscribeContent = "Lorem ipsum dolor sit amet, consect etur adipisicing. elit sed do eiusmod."
+
+      # copyright
+      copyright = "Bizpro</span> &copy; 2017 All Right Reserved"
+
+        # social icon
+        [[Languages.en.params.footer.socialIcon]]
+        icon = "ti-facebook"
+        URL = "#"
+
+        [[Languages.en.params.footer.socialIcon]]
+        icon = "ti-twitter-alt"
+        URL = "#"
+        
+        [[Languages.en.params.footer.socialIcon]]
+        icon = "ti-vimeo-alt"
+        URL = "#"
+        
+        [[Languages.en.params.footer.socialIcon]]
+        icon = "ti-linkedin"
+        URL = "#"
+
+        # service links
+        [[Languages.en.params.footer.service]]
+        serviceItem = "Company History"
+        URL = "#"
+        
+        [[Languages.en.params.footer.service]]
+        serviceItem = "About Us"
+        URL = "#"
+        
+        [[Languages.en.params.footer.service]]
+        serviceItem = "Contact Us"
+        URL = "#"
+        
+        [[Languages.en.params.footer.service]]
+        serviceItem = "Service"
+        URL = "#"
+        
+        [[Languages.en.params.footer.service]]
+        serviceItem = "Privacy Policy"
+        URL = "#"
+
+        # quick links
+        [[Languages.en.params.footer.quickLinks]]
+        quickLinkItem = "Pricing"
+        URL = "#"
+        
+        [[Languages.en.params.footer.quickLinks]]
+        quickLinkItem = "FAQs"
+        URL = "#"
+        
+        [[Languages.en.params.footer.quickLinks]]
+        quickLinkItem = "Contact Us"
+        URL = "#"
+        
+        [[Languages.en.params.footer.quickLinks]]
+        quickLinkItem = "Service"
+        URL = "#"
+        
+        [[Languages.en.params.footer.quickLinks]]
+        quickLinkItem = "Privacy Policy"
+        URL = "#"
+
+        # bottom links
+        [[Languages.en.params.footer.links]]
+          name = "Legal"
+          URL = "#"
+            
+        [[Languages.en.params.footer.links]]
+          name = "Sitemap"
+          URL = "#"
+            
+        [[Languages.en.params.footer.links]]
+          name = "Privacy Policy"
+          URL = "#"
+            
+        [[Languages.en.params.footer.links]]
+          name = "Terms & Conditions"
+          URL = "#"
+
+      # share blog post
+      [[Languages.en.params.sharePost]]
+      icon = "ti-facebook"
+      URL = "#"
+      
+      [[Languages.en.params.sharePost]]
+      icon = "ti-twitter-alt"
+      URL = "#"
+      
+      [[Languages.en.params.sharePost]]
+      icon = "ti-linkedin"
+      URL = "#"
+      
+      [[Languages.en.params.sharePost]]
+      icon = "ti-google"
+      URL = "#"
+          
+
+
+# Franch
+  [Languages.fr]
+  languageName = "Fr"
+  languageCode = "fr-fr"
+  weight = 1
+  title = "Biztrox Franch"
+  home = "FR-Home"
+
+  # navigation
+  [Languages.fr.menu]
+      
+    [[Languages.fr.menu.nav]]
+    name = "FR-About"
+    URL = "/fr/about"
+    weight = 2
+    
+    [[Languages.fr.menu.nav]]
+    name = "FR-Service"
+    URL = "/fr/service"
+    weight = 3
+    
+    [[Languages.fr.menu.nav]]
+    name = "FR-Blog"
+    URL = "/fr/blog"
+    weight = 4
+    
+    [[Languages.fr.menu.nav]]
+    name = "FR-Team"
+    URL = "/fr/team"
+    weight = 6
+
+    [[Languages.fr.menu.nav]]
+    weight = 7
+    name = "FR-Pages"
+    hasChildren = true
+
+      [[Languages.fr.menu.nav]]
+      parent = "FR-Pages"
+      name = "FR-Project"
+      URL = "/fr/project"
+
+      [[Languages.fr.menu.nav]]
+      parent = "FR-Pages"
+      name = "FR-Pricing"
+      URL = "/fr/pricing"
+
+      [[Languages.fr.menu.nav]]
+      parent = "FR-Pages"
+      name = "FR-Contact"
+      URL = "/fr/contact"
+
+
+      # Quote Button
+      [Languages.fr.params.quoteBtn]
+      enable = true
+      btnText = "get a quote"
+      btnURL = "#"
+
+      # about
+      [Languages.fr.params.about]
+      enable = true
+      bgImage = "images/background/about-bg.jpg"
+      title = "Who We Are?"
+      description = "Excepteur sint occaecat cupidatat non proident sunt culpa qui officia deserunt mollit anim id est laborum."
+      [Languages.fr.params.about.btn]
+      enable = true
+      btnText = "Explore More"
+      btnURL = "#"
+
+        [[Languages.fr.params.about.listLeft]]
+        listItem = "Business Services"
+
+        [[Languages.fr.params.about.listLeft]]
+        listItem = "Audit & Assurance"
+        
+        [[Languages.fr.params.about.listLeft]]
+        listItem = "IT Control Solutions"
+
+        [[Languages.fr.params.about.listRight]]
+        listItem = "Business Services"
+
+        [[Languages.fr.params.about.listRight]]
+        listItem = "Audit & Assurance"
+        
+        [[Languages.fr.params.about.listRight]]
+        listItem = "IT Control Solutions"
+
+      # promo video
+      [Languages.fr.params.promoVideo]
+      enable = true
+      heading = "We Are Alawys <br> Comited"
+      bgImage = "images/background/promo-video.jpg"
+      videoURL = "https://www.youtube.com/watch?v=6ZfuNTqbHE8"
+      title = "Lorem ipsum dolor <br> sit amet con."
+
+      # cta
+      [Languages.fr.params.cta]
+      enable = true
+      bgImage = "images/background/cta.jpg"
+      title = "Biztrox give the smart solution for your business"
+      btnText = "get a quote"
+      btnURL = "#"
+
+      # clients Logo Slider
+      [Languages.fr.params.logoSlider]
+      enable = true
+        [[Languages.fr.params.logoSlider.sliderItem]]
+        image = "images/client-logo/client-logo-1.png"
+        URL = "#"
+        
+        [[Languages.fr.params.logoSlider.sliderItem]]
+        image = "images/client-logo/client-logo-2.png"
+        URL = "#"
+        
+        [[Languages.fr.params.logoSlider.sliderItem]]
+        image = "images/client-logo/client-logo-3.png"
+        URL = "#"
+        
+        [[Languages.fr.params.logoSlider.sliderItem]]
+        image = "images/client-logo/client-logo-4.png"
+        URL = "#"
+        
+        [[Languages.fr.params.logoSlider.sliderItem]]
+        image = "images/client-logo/client-logo-5.png"
+        URL = "#"
+        
+        [[Languages.fr.params.logoSlider.sliderItem]]
+        image = "images/client-logo/client-logo-1.png"
+        URL = "#"
+        
+        [[Languages.fr.params.logoSlider.sliderItem]]
+        image = "images/client-logo/client-logo-2.png"
+        URL = "#"
+        
+        [[Languages.fr.params.logoSlider.sliderItem]]
+        image = "images/client-logo/client-logo-3.png"
+        URL = "#"
+        
+        [[Languages.fr.params.logoSlider.sliderItem]]
+        image = "images/client-logo/client-logo-4.png"
+        URL = "#"
+        
+        [[Languages.fr.params.logoSlider.sliderItem]]
+        image = "images/client-logo/client-logo-5.png"
+        URL = "#"
+
+      # footer
+      [Languages.fr.params.footer]
+      logo = "images/logo-footer.png"
+      content = "Lorem ipsum dolor amet consectetur adipisicing elit sed eiusm tempor incididunt labore dolore magna aliqua enim."
+
+      # service links
+      services = "Services"
+      
+      # quickLinks
+      quickLink = "Quick Link"
+
+      # subscribe
+      subscribe = "Subscribe Us"
+      subscribeContent = "Lorem ipsum dolor sit amet, consect etur adipisicing. elit sed do eiusmod."
+
+      # copyright
+      copyright = "Bizpro</span> &copy; 2017 All Right Reserved"
+
+        # social icon
+        [[Languages.fr.params.footer.socialIcon]]
+        icon = "ti-facebook"
+        URL = "#"
+
+        [[Languages.fr.params.footer.socialIcon]]
+        icon = "ti-twitter-alt"
+        URL = "#"
+        
+        [[Languages.fr.params.footer.socialIcon]]
+        icon = "ti-vimeo-alt"
+        URL = "#"
+        
+        [[Languages.fr.params.footer.socialIcon]]
+        icon = "ti-linkedin"
+        URL = "#"
+
+        # service links
+        [[Languages.fr.params.footer.service]]
+        serviceItem = "Company History"
+        URL = "#"
+        
+        [[Languages.fr.params.footer.service]]
+        serviceItem = "About Us"
+        URL = "#"
+        
+        [[Languages.fr.params.footer.service]]
+        serviceItem = "Contact Us"
+        URL = "#"
+        
+        [[Languages.fr.params.footer.service]]
+        serviceItem = "Service"
+        URL = "#"
+        
+        [[Languages.fr.params.footer.service]]
+        serviceItem = "Privacy Policy"
+        URL = "#"
+
+        # quick links
+        [[Languages.fr.params.footer.quickLinks]]
+        quickLinkItem = "Pricing"
+        URL = "#"
+        
+        [[Languages.fr.params.footer.quickLinks]]
+        quickLinkItem = "FAQs"
+        URL = "#"
+        
+        [[Languages.fr.params.footer.quickLinks]]
+        quickLinkItem = "Contact Us"
+        URL = "#"
+        
+        [[Languages.fr.params.footer.quickLinks]]
+        quickLinkItem = "Service"
+        URL = "#"
+        
+        [[Languages.fr.params.footer.quickLinks]]
+        quickLinkItem = "Privacy Policy"
+        URL = "#"
+
+        # bottom links
+        [[Languages.fr.params.footer.links]]
+          name = "Legal"
+          URL = "#"
+            
+        [[Languages.fr.params.footer.links]]
+          name = "Sitemap"
+          URL = "#"
+            
+        [[Languages.fr.params.footer.links]]
+          name = "Privacy Policy"
+          URL = "#"
+            
+        [[Languages.fr.params.footer.links]]
+          name = "Terms & Conditions"
+          URL = "#"
+
+      # share blog post
+      [[Languages.fr.params.sharePost]]
+      icon = "ti-facebook"
+      URL = "#"
+      
+      [[Languages.fr.params.sharePost]]
+      icon = "ti-twitter-alt"
+      URL = "#"
+      
+      [[Languages.fr.params.sharePost]]
+      icon = "ti-linkedin"
+      URL = "#"
+      
+      [[Languages.fr.params.sharePost]]
+      icon = "ti-google"
+      URL = "#"

@@ -1,0 +1,24 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{ if $data.about.ceo.enable }}
+{{ "<!-- ceo section -->" | safeHTML }}
+<section>
+    <div class="container">
+        <div class="row rounded bg-secondary">
+            {{ "<!-- ceo image -->" | safeHTML }}
+            <div class="col-lg-5 rounded-left ceo-image" style="background-image: url('{{ $data.about.ceo.bgImage | absURL }}');"></div>
+            <div class="col-lg-7">
+                {{ "<!-- ceo content -->" | safeHTML }}
+                <div class="p-5">
+                   {{ with $data.about.ceo.title }} <h2 class="section-title section-title-border-half-white text-white">{{ . | safeHTML }}</h2> {{ end }}
+                   {{ with $data.about.ceo.content }} <p class="text-white">{{ . }}</p> {{ end }}
+                    <img src="{{ $data.about.ceo.signature | absURL }}" alt="ceo-signature">
+                   {{ with $data.about.ceo.name }} <h5 class="text-white">{{ . }}</h5> {{ end }}
+                   {{ with $data.about.ceo.designation }} <h6 class="text-white">{{ . }}</h6> {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ "<!-- /ceo section -->" | safeHTML }}
+{{ end }}
