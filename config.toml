@@ -1,4 +1,4 @@
-baseURL = "http://demo.themefisher.com/"
+baseURL = "."
 theme = "biztrox-hugo"
 summaryLength = "10"
 DefaultContentLanguage = "en"
