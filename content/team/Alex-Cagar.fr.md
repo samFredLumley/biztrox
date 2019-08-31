@@ -1,10 +1,10 @@
 ---
 title: Alex Cagar 2
 date: 2018-09-29T08:41:38.000+00:00
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-  tempor incididunt ut labore et dolore magna aliqua.enim ad minim veniam, quis nostrud
-  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat irure dolor
-  in reprehender.
+description: Hello Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+  eiusmod tempor incididunt ut labore et dolore magna aliqua.enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+  irure dolor in reprehender.
 designation: CEO
 image: images/team/team-page-2.jpg
 bgImage: images/background/page-title.jpg
