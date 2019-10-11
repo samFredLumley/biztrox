@@ -1,13 +1,11 @@
 enable : true
 sliderItem:
-  - subHeading : We are here to
-    heading : Planning Business
+  - subHeading : Pramo Mitranandan
+    heading : Barrister, Solicitor & Notary Public
     description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
-    bgImage : images/banner/banner-1.jpg
-    dataIcon : ti-comments
-    dataText : Consultation
+    # bgImage : images/favicon.svg
     btn : 
       enable : true
-      btnText: More details
-      btnURL : '#'
+      btnText: Get in touch
+      btnURL : './contact'
      

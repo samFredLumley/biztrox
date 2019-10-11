@@ -2,7 +2,7 @@ baseURL = "https://stupefied-brown-327b14.netlify.com"
 theme = "biztrox-hugo"
 summaryLength = "10"
 DefaultContentLanguage = "en"
-disableLanguages = [""] # desable language from here
+disableLanguages = [""] # disable language from here
 
 [params]
 logo = "images/logo.png"
