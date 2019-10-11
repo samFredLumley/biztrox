@@ -13,7 +13,7 @@
 
     //Hero Slider
     $('.hero-slider').slick({
-        autoplay: true,
+        autoplay: false,
         infinite: true,
         autoplaySpeed: 10000,
         arrows: true,
@@ -36,7 +36,7 @@
 
     // hero slider without pagination
     $('.hero-slider-2').slick({
-        autoplay: true,
+        autoplay: false,
         infinite: true,
         arrows: false,
         dots: false
@@ -51,7 +51,7 @@
         slidesToShow: 4,
         slidesToScroll: 4,
         arrows: false,
-        autoplay: true,
+        autoplay: false,
         responsive: [{
                 breakpoint: 1024,
                 settings: {
@@ -81,14 +81,14 @@
     // about slider
     $('.about-slider').slick({
         arrows: true,
-        autoplay: true,
+        autoplay: false,
         prevArrow: '<button type=\'button\' class=\'prevArrow\'><i class=\'ti-arrow-left\'></i></button>',
         nextArrow: '<button type=\'button\' class=\'nextArrow\'><i class=\'ti-arrow-right\'></i></button>'
     });
     // about post slider
     $('.post-slider').slick({
         arrows: true,
-        autoplay: true,
+        autoplay: false,
         prevArrow: '<button type=\'button\' class=\'prevArrow\'><i class=\'ti-arrow-left\'></i></button>',
         nextArrow: '<button type=\'button\' class=\'nextArrow\'><i class=\'ti-arrow-right\'></i></button>'
     });
@@ -105,7 +105,7 @@
         infinite: false,
         dots: false,
         arrows: true,
-        autoplay: true,
+        autoplay: false,
         prevArrow: '<button type=\'button\' class=\'prevArrow\'><i class=\'ti-arrow-left\'></i></button>',
         nextArrow: '<button type=\'button\' class=\'nextArrow\'><i class=\'ti-arrow-right\'></i></button>'
     });
@@ -115,7 +115,7 @@
         infinite: true,
         slidesToShow: 5,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false,
         dots: false,
         arrows: false,
         responsive: [{
@@ -226,7 +226,7 @@
         e.preventDefault();
         $('html,body').animate({
             scrollTop: 0
-        }, 1500, 'easeInOutExpo');
+        }, 1000, 'easeInOutExpo');
     });
 
     // -----------------------------

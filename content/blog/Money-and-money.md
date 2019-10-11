@@ -1,5 +1,5 @@
 ---
-title: "Money and Money"
+title: "Money"
 bgImage: images/background/page-title.jpg
 date: 2018-09-24T11:10:46+06:00
 author: John Lincon

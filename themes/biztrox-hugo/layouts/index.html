@@ -3,7 +3,7 @@
 {{ partial "hero-slider.html" . }}
 
 {{ "<!-- service -->" | safeHTML }}
-<section class="section">
+<section class="section bg-gray">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-12 text-center">
@@ -37,7 +37,7 @@
 {{ partial "skill.html" . }}
 
 {{ "<!-- work -->" | safeHTML }}
-<section class="section bg-gray">
+<section class="section bg-gray hide">
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -77,8 +77,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-12 text-center">
-                <h5 class="section-title-sm">Latest News</h5>
-                <h2 class="section-title section-title-border-gray">Company News</h2>
+                <h2 class="section-title section-title-border-gray">News</h2>
             </div>
             
             {{ range $index, $element:= where .Data.Pages "Type" "post" }}

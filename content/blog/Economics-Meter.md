@@ -1,5 +1,5 @@
 ---
-title: Economics Meter E
+title: Economics
 bgImage: images/background/page-title.jpg
 date: 2018-09-24T05:11:24.000+00:00
 description: This is meta description

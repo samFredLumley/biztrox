@@ -33,7 +33,9 @@
                 </div>
                 {{ "<!-- footer links -->" | safeHTML }}
                 <div class="col-lg-2 col-md-4 col-6">
+                    
                     {{ with .Site.Params.footer.quickLink}} <h4 class="text-white mb-4">{{ . }}</h4>{{ end }}
+                    
                     <ul class="footer-links">
                         {{ range .Site.Params.footer.quickLinks}}
                         <li>
@@ -75,6 +77,16 @@
                         </li>
                         {{ end }}
                     </ul>
+                    <ul class="list-inline text-lg-right footer-contact">
+                            <li class="list-inline-item">
+                               {{ with .Site.Params.mail }} <a href="mailto:{{ . | absURL }}" class="white">{{ . }}</a> {{ end }}
+                            </li>
+                            <li class="list-inline-item">
+                                {{ with .Site.Params.mobile }} <a href="callto:{{ . }}" class="white">
+                                    <span class="ml-2">{{ . }}</span> {{ end }}
+                                </a>
+                            </li>
+                        </ul>
                 </div>
             </div>
         </div>

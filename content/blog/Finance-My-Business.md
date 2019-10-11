@@ -1,5 +1,5 @@
 ---
-title: "Finance My Business"
+title: "Finance"
 bgImage: images/background/page-title.jpg
 date: 2018-09-24T11:10:07+06:00
 description : "This is meta description"
