@@ -1,16 +1,16 @@
 ---
-title: "Market Strategy"
+title: "Family Law"
 date: 2018-09-29T11:54:02+06:00
 description : "This is meta description"
 image: images/service/service-3.jpg
 bgImage: images/background/page-title.jpg
 icon: ti-server
-brochureURL: '#'
-regularDay: Sun-Tues
-regularTime: 08.00am - 06.00pm
-halfDay: Thursday
-halfTime: 08.00am - 01.00pm
-offDay: Friday
+# brochureURL: '#'
+# regularDay: Sun-Tues
+# regularTime: 08.00am - 06.00pm
+# halfDay: Thursday
+# halfTime: 08.00am - 01.00pm
+# offDay: Friday
 type : service
 ---
 
