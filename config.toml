@@ -9,7 +9,7 @@ logo = "images/logo.png"
 mail = "pramo.mitra@gmail.com"
 mobile = "289-237-2272"
 # Meta data
-description = "Mitra Law Firm in Hamilton Ontario"
+description = "Mitra Law Firm in Hamilton, Ontario"
 author = "Plum Labs"
 # google map
 gmapAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"
