@@ -1,11 +1,11 @@
-enable : true
+---
+enable: true
 sliderItem:
-  - subHeading : Pramo Mitranandan
-    heading : Barrister, Solicitor & Notary Public
-    description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
-    # bgImage : images/favicon.svg
-    btn : 
-      enable : true
-      btnText: Get in touch
-      btnURL : './contact'
-     
+- subHeading: Pramo Mitranandan
+  heading: Barrister, Solicitor & Notary Publicc
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor <br> incididunt ut labore et dolore magna aliqua.
+  btn:
+    enable: true
+    btnText: Get in touch
+    btnURL: "./contact"

@@ -7,8 +7,6 @@ sections:
 - type: document
   path: data/en/heroSlider.yml
   label: Hero Slider
-  match: "**/*"
-  read_only: false
 - type: directory
   path: content
   label: Pages
