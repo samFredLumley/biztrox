@@ -1,12 +1,8 @@
 # Mitra Law
 
----
-
 A static webpage for Mitra Law built with Hugo, Biztrox and Bootstrap.
 
 ## Setup
-
---- 
 
 To set up a local version of this site:
 
