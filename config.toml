@@ -33,10 +33,14 @@ mailchimpFormName = "b_f95ece2732a6e9925f2e70a61_b1e227529e" # replace this code
   languageCode = "en-us"
   weight = 1
   title = "Mitra Law"
-  home = "Home"
 
   # navigation
   [Languages.en.menu]
+
+    [[Languages.en.menu.nav]]
+    name = "Home"
+    URL = "/"
+    weight = 1
       
     [[Languages.en.menu.nav]]
     name = "About"
