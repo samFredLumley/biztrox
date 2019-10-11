@@ -6,7 +6,7 @@ bgImage: images/background/page-title.jpg
 tag : Ecommerce Advice
 image : images/project/project-8.jpg
 client : Baximco Ltd.
-category : Market Strategy
+category : Market Strategyy
 expertise : Mobile App
 liveDemoURL : '#'
 caseStudy : '#'

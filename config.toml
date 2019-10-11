@@ -70,22 +70,22 @@ mailchimpFormName = "b_f95ece2732a6e9925f2e70a61_b1e227529e" # replace this code
       btnURL = "#"
 
         [[Languages.en.params.about.listLeft]]
-        listItem = "Business Services"
+        listItem = "Services"
 
         [[Languages.en.params.about.listLeft]]
-        listItem = "Audit & Assurance"
+        listItem = "Services"
         
         [[Languages.en.params.about.listLeft]]
-        listItem = "IT Control Solutions"
+        listItem = "Services"
 
         [[Languages.en.params.about.listRight]]
-        listItem = "Business Services"
+        listItem = "Services"
 
         [[Languages.en.params.about.listRight]]
-        listItem = "Audit & Assurance"
+        listItem = "Services"
         
         [[Languages.en.params.about.listRight]]
-        listItem = "IT Control Solutions"
+        listItem = "Services"
 
       # promo video
       [Languages.en.params.promoVideo]
