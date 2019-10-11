@@ -4,6 +4,9 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
+- type: document
+  path: data/en/heroSlider.yml
+  label: Hero Slider
 - type: directory
   path: content
   label: Pages
@@ -37,11 +40,6 @@ sections:
 - type: directory
   path: content/blog
   label: Blog
-  create: all
-  match: "**/*"
-- type: directory
-  path: content/pricing
-  label: Pricing
   create: all
   match: "**/*"
 upload_dir: static/uploads
