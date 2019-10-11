@@ -1,6 +1,6 @@
 enable : true
 sliderItem:
-  - subHeading : We are here to
+  - subHeading : We are here ton
     heading : Planning Business
     description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
     bgImage : images/banner/banner-1.jpg

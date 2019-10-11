@@ -6,15 +6,15 @@ disableLanguages = [""] # desable language from here
 
 [params]
 logo = "images/logo.png"
-mail = "info@companyname.com"
-mobile = "1234565523"
+mail = "pramo.mitra@gmail.com"
+mobile = "289-237-2272"
 # Meta data
-description = "Airspace Hugo theme"
-author = "themefisher"
+description = "Mitra Law Firm in Hamilton Ontario"
+author = "Plum Labs"
 # google map
 gmapAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"
-mapLatitude = "51.5223477"
-mapLongitude = "-0.1622023"
+mapLatitude = "43.250725"
+mapLongitude = "-79.868019"
 mapMarker = "images/marker.png"
 # Google Analitycs
 googleAnalitycsID = "Your ID"
@@ -32,7 +32,7 @@ mailchimpFormName = "b_f95ece2732a6e9925f2e70a61_b1e227529e" # replace this code
   languageName = "En"
   languageCode = "en-us"
   weight = 1
-  title = "Biztrox"
+  title = "Mitra Law"
   home = "Home"
 
   # navigation
@@ -44,55 +44,28 @@ mailchimpFormName = "b_f95ece2732a6e9925f2e70a61_b1e227529e" # replace this code
     weight = 2
     
     [[Languages.en.menu.nav]]
-    name = "Service"
+    name = "Services"
     URL = "/service"
     weight = 3
     
     [[Languages.en.menu.nav]]
     name = "Blog"
     URL = "/blog"
-    weight = 4
-    
-    [[Languages.en.menu.nav]]
-    name = "Team"
-    URL = "/team"
-    weight = 6
-    
-    [[Languages.en.menu.nav]]
-    name = "Pricing"
-    URL = "/pricing"
-    weight = 7
+    weight = 5
     
     [[Languages.en.menu.nav]]
     name = "Contact"
     URL = "/contact"
-    weight = 8
-
-    [[Languages.en.menu.nav]]
-    weight = 9
-    name = "Pages"
-    hasChildren = true
-
-      [[Languages.en.menu.nav]]
-      parent = "Pages"
-      name = "Project"
-      URL = "/project"
-
-
-      # Quote Button
-      [Languages.en.params.quoteBtn]
-      enable = true
-      btnText = "get a quote"
-      btnURL = "#"
+    weight = 4
 
       # about
       [Languages.en.params.about]
       enable = true
       bgImage = "images/background/about-bg.jpg"
-      title = "Who We Are?"
+      title = "Who We Are"
       description = "Excepteur sint occaecat cupidatat non proident sunt culpa qui officia deserunt mollit anim id est laborum."
       [Languages.en.params.about.btn]
-      enable = true
+      enable = false
       btnText = "Explore More"
       btnURL = "#"
 
@@ -116,7 +89,7 @@ mailchimpFormName = "b_f95ece2732a6e9925f2e70a61_b1e227529e" # replace this code
 
       # promo video
       [Languages.en.params.promoVideo]
-      enable = true
+      enable = false
       heading = "We Are Alawys <br> Comited"
       bgImage = "images/background/promo-video.jpg"
       videoURL = "https://www.youtube.com/watch?v=6ZfuNTqbHE8"
@@ -124,15 +97,15 @@ mailchimpFormName = "b_f95ece2732a6e9925f2e70a61_b1e227529e" # replace this code
 
       # cta
       [Languages.en.params.cta]
-      enable = true
+      enable = false
       bgImage = "images/background/cta.jpg"
-      title = "Biztrox give the smart solution for your business"
+      title = "Mitra Law is the smart solution"
       btnText = "get a quote"
       btnURL = "#"
 
       # clients Logo Slider
       [Languages.en.params.logoSlider]
-      enable = true
+      enable = false
         [[Languages.en.params.logoSlider.sliderItem]]
         image = "images/client-logo/client-logo-1.png"
         URL = "#"
@@ -179,29 +152,17 @@ mailchimpFormName = "b_f95ece2732a6e9925f2e70a61_b1e227529e" # replace this code
       content = "Lorem ipsum dolor amet consectetur adipisicing elit sed eiusm tempor incididunt labore dolore magna aliqua enim."
 
       # service links
-      services = "Services"
-      
-      # quickLinks
-      quickLink = "Quick Link"
+      services = "Links"
 
       # subscribe
-      subscribe = "Subscribe Us"
+      subscribe = "Subscribe"
       subscribeContent = "Lorem ipsum dolor sit amet, consect etur adipisicing. elit sed do eiusmod."
 
       # copyright
-      copyright = "Bizpro</span> &copy; 2017 All Right Reserved"
-
-        # social icon
-        [[Languages.en.params.footer.socialIcon]]
-        icon = "ti-facebook"
-        URL = "#"
+      copyright = "Mitra Law</span> &copy; 2019 All Right Reserved"
 
         [[Languages.en.params.footer.socialIcon]]
         icon = "ti-twitter-alt"
-        URL = "#"
-        
-        [[Languages.en.params.footer.socialIcon]]
-        icon = "ti-vimeo-alt"
         URL = "#"
         
         [[Languages.en.params.footer.socialIcon]]
@@ -209,63 +170,18 @@ mailchimpFormName = "b_f95ece2732a6e9925f2e70a61_b1e227529e" # replace this code
         URL = "#"
 
         # service links
-        [[Languages.en.params.footer.service]]
-        serviceItem = "Company History"
-        URL = "#"
-        
-        [[Languages.en.params.footer.service]]
-        serviceItem = "About Us"
-        URL = "#"
-        
-        [[Languages.en.params.footer.service]]
-        serviceItem = "Contact Us"
-        URL = "#"
-        
-        [[Languages.en.params.footer.service]]
-        serviceItem = "Service"
-        URL = "#"
-        
-        [[Languages.en.params.footer.service]]
-        serviceItem = "Privacy Policy"
-        URL = "#"
 
-        # quick links
-        [[Languages.en.params.footer.quickLinks]]
-        quickLinkItem = "Pricing"
+        [[Languages.en.params.footer.service]]
+        serviceItem = "Services"
         URL = "#"
         
-        [[Languages.en.params.footer.quickLinks]]
-        quickLinkItem = "FAQs"
+        [[Languages.en.params.footer.service]]
+        serviceItem = "About"
         URL = "#"
         
-        [[Languages.en.params.footer.quickLinks]]
-        quickLinkItem = "Contact Us"
+        [[Languages.en.params.footer.service]]
+        serviceItem = "Contact"
         URL = "#"
-        
-        [[Languages.en.params.footer.quickLinks]]
-        quickLinkItem = "Service"
-        URL = "#"
-        
-        [[Languages.en.params.footer.quickLinks]]
-        quickLinkItem = "Privacy Policy"
-        URL = "#"
-
-        # bottom links
-        [[Languages.en.params.footer.links]]
-          name = "Legal"
-          URL = "#"
-            
-        [[Languages.en.params.footer.links]]
-          name = "Sitemap"
-          URL = "#"
-            
-        [[Languages.en.params.footer.links]]
-          name = "Privacy Policy"
-          URL = "#"
-            
-        [[Languages.en.params.footer.links]]
-          name = "Terms & Conditions"
-          URL = "#"
 
       # share blog post
       [[Languages.en.params.sharePost]]
@@ -286,12 +202,12 @@ mailchimpFormName = "b_f95ece2732a6e9925f2e70a61_b1e227529e" # replace this code
           
 
 
-# Franch
+# French
   [Languages.fr]
   languageName = "Fr"
   languageCode = "fr-fr"
   weight = 1
-  title = "Biztrox Franch"
+  title = "Mitra Law"
   home = "FR-Home"
 
   # navigation
@@ -310,37 +226,17 @@ mailchimpFormName = "b_f95ece2732a6e9925f2e70a61_b1e227529e" # replace this code
     [[Languages.fr.menu.nav]]
     name = "FR-Blog"
     URL = "/fr/blog"
+    weight = 5
+
+    [[Languages.fr.menu.nav]]
+    name = "FR-Contact"
+    URL = "/fr/contact"
     weight = 4
-    
-    [[Languages.fr.menu.nav]]
-    name = "FR-Team"
-    URL = "/fr/team"
-    weight = 6
-
-    [[Languages.fr.menu.nav]]
-    weight = 7
-    name = "FR-Pages"
-    hasChildren = true
-
-      [[Languages.fr.menu.nav]]
-      parent = "FR-Pages"
-      name = "FR-Project"
-      URL = "/fr/project"
-
-      [[Languages.fr.menu.nav]]
-      parent = "FR-Pages"
-      name = "FR-Pricing"
-      URL = "/fr/pricing"
-
-      [[Languages.fr.menu.nav]]
-      parent = "FR-Pages"
-      name = "FR-Contact"
-      URL = "/fr/contact"
 
 
       # Quote Button
       [Languages.fr.params.quoteBtn]
-      enable = true
+      enable = false
       btnText = "get a quote"
       btnURL = "#"
 
