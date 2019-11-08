@@ -102,15 +102,10 @@
 <script src="{{ "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" | absURL }}"></script>
 {{ "<!-- Bootstrap JS -->" | safeHTML }}
 <script src="{{ "plugins/bootstrap/bootstrap.min.js" | absURL }}"></script>
-
-
 {{ "<!-- Google Map -->" | safeHTML }}
 <script src="{{ .Site.Params.gmapAPI | absURL }}"></script>
 <script src="{{ "plugins/google-map/gmap.js" | absURL }}"></script>
-{{ "<!-- Syo Timer -->" | safeHTML }}
-<script src="{{ "plugins/syotimer/jquery.syotimer.js" | absURL }}"></script>
-{{ "<!-- aos -->" | safeHTML }}
-<script src="{{ "plugins/aos/aos.js" | absURL }}"></script>
+
 {{ "<!-- Main Script -->" | safeHTML }}
 {{ $script := resources.Get "js/script.js" | minify}}
 <script src="{{ $script.Permalink }}"></script>

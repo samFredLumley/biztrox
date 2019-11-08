@@ -111,16 +111,5 @@
         counter();
     });
 
-    // syotimer
-    $('#simple-timer').syotimer({
-        year: 2019,
-        month: 1,
-        day: 31,
-        hour: 0,
-        minute: 0
-    });
-
-    // AOS
-    AOS.init();
 
 })(jQuery);
