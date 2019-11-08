@@ -2,7 +2,7 @@ baseURL = "https://mitra-test.netlify.com"
 theme = "biztrox-hugo"
 summaryLength = "10"
 DefaultContentLanguage = "en"
-disableLanguages = [""] # disable language from here
+disableLanguages = ["fr"] # disable language from here
 
 [params]
 logo = "images/logo.png"

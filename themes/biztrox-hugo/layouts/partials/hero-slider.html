@@ -2,10 +2,10 @@
 {{ if $data.heroSlider.enable }}
 {{ "<!-- hero slider -->" | safeHTML }}
 <section>
-    <div class="hero-slider position-relative">
+    <div class="position-relative">
         {{ "<!-- slider item -->" | safeHTML }}
         {{ range $data.heroSlider.sliderItem }}
-        <div class="hero-slider-item py-160" style="background-image: url('{{ .bgImage | absURL }}')" data-icon="{{ .dataIcon }}"
+        <div class="" style="background-image: url('{{ .bgImage | absURL }}')" data-icon="{{ .dataIcon }}"
             data-text="{{ .dataText }}">
             <div class="container">
                 <div class="row">
