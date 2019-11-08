@@ -44,20 +44,6 @@
                         {{ end }}
                     </ul>
                 </div>
-                {{ "<!-- subscribe form -->" | safeHTML }}
-                <div class="col-lg-3 col-md-12 offset-lg-1">
-                    <div class="mt-5 mt-lg-0 text-center text-md-left">
-                            {{ with .Site.Params.footer.subscribe}} <h4 class="mb-4 text-white">{{ . }}</h4> {{ end }}
-                            {{ with .Site.Params.footer.subscribeContent}} <p class="text-white mb-4">{{ . }}</p> {{ end }}
-                        <form action="#" class="position-relative">
-                            <input type="text" class="form-control subscribe" name="subscribe" id="Subscribe"
-                                placeholder="Enter Your Email">
-                            <button class="btn-subscribe" type="submit" value="send">
-                                <i class="ti-arrow-right"></i>
-                            </button>
-                        </form>
-                    </div>
-                </div>
             </div>
         </div>
     </div>

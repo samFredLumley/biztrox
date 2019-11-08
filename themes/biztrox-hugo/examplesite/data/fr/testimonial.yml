@@ -1,7 +1,7 @@
 enable : true
 titleSM : Clients
 title : What client Say
-image : images/client.png
+image : 
 sliderItem :
   - icon : ti-quote-left
     content : Lorem ipsum dolor sit amet constur adipisicing elit sed eiusmtempor incid sed dolore magna aliqu enim minim veniam quis nostrud exercittion ullamco labo ris nisi aliquip excepteur.

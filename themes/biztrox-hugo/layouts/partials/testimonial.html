@@ -8,9 +8,6 @@
                {{ with $data.testimonial.titleSM }} <h5 class="section-title-sm">{{ . }}</h5> {{ end }}
                {{ with $data.testimonial.title }} <h2 class="section-title section-title-border"> {{ . }} </h2> {{ end }}
             </div>
-            <div class="col-lg-5 col-md-5 pr-0 align-self-center">
-                <img class="img-fluid w-100" src="{{ $data.testimonial.image | absURL }}" alt="clients-image">
-            </div>
             <div class="col-lg-7 col-md-7 align-self-center pl-0">
                 <div class="testimonial-slider p-5">
                     {{ "<!-- slider item -->" | safeHTML }}

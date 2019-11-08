@@ -107,49 +107,6 @@ mailchimpFormName = "b_f95ece2732a6e9925f2e70a61_b1e227529e" # replace this code
       btnText = "get a quote"
       btnURL = "#"
 
-      # clients Logo Slider
-      [Languages.en.params.logoSlider]
-      enable = false
-        [[Languages.en.params.logoSlider.sliderItem]]
-        image = "images/client-logo/client-logo-1.png"
-        URL = "#"
-        
-        [[Languages.en.params.logoSlider.sliderItem]]
-        image = "images/client-logo/client-logo-2.png"
-        URL = "#"
-        
-        [[Languages.en.params.logoSlider.sliderItem]]
-        image = "images/client-logo/client-logo-3.png"
-        URL = "#"
-        
-        [[Languages.en.params.logoSlider.sliderItem]]
-        image = "images/client-logo/client-logo-4.png"
-        URL = "#"
-        
-        [[Languages.en.params.logoSlider.sliderItem]]
-        image = "images/client-logo/client-logo-5.png"
-        URL = "#"
-        
-        [[Languages.en.params.logoSlider.sliderItem]]
-        image = "images/client-logo/client-logo-1.png"
-        URL = "#"
-        
-        [[Languages.en.params.logoSlider.sliderItem]]
-        image = "images/client-logo/client-logo-2.png"
-        URL = "#"
-        
-        [[Languages.en.params.logoSlider.sliderItem]]
-        image = "images/client-logo/client-logo-3.png"
-        URL = "#"
-        
-        [[Languages.en.params.logoSlider.sliderItem]]
-        image = "images/client-logo/client-logo-4.png"
-        URL = "#"
-        
-        [[Languages.en.params.logoSlider.sliderItem]]
-        image = "images/client-logo/client-logo-5.png"
-        URL = "#"
-
       # footer
       [Languages.en.params.footer]
       logo = "images/logo-footer.png"
