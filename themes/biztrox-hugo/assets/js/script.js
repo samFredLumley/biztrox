@@ -20,32 +20,7 @@
     });
 
 
-    //   magnific popup video
-    $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-        disableOn: 700,
-        type: 'iframe',
-        mainClass: 'mfp-zoom-in',
-        removalDelay: 160,
-        preloader: false,
-        fixedContentPos: true
-    });
 
-    // Magnific Popup Image
-    $('.popup-image').magnificPopup({
-        type: 'image',
-        removalDelay: 160, //delay removal by X to allow out-animation
-        callbacks: {
-            beforeOpen: function () {
-                // just a hack that adds mfp-anim class to markup
-                this.st.image.markup = this.st.image.markup.replace('mfp-figure', 'mfp-figure mfp-with-anim');
-                this.st.mainClass = this.st.el.attr('data-effect');
-            }
-        },
-        closeOnContentClick: true,
-        midClick: true,
-        fixedContentPos: true,
-        fixedBgPos: true
-    });
 
     // filter
     $(document).ready(function () {
