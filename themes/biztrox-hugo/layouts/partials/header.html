@@ -1,24 +1,5 @@
 {{ "<!-- navigation -->" | safeHTML }}
 <header>
-    {{ "<!-- top header -->" | safeHTML }}
-    <div class="top-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="list-inline text-lg-right text-center">
-                        <li class="list-inline-item">
-                           {{ with .Site.Params.mail }} <a href="mailto:{{ . | absURL }}">{{ . }}</a> {{ end }}
-                        </li>
-                        <li class="list-inline-item">
-                            {{ with .Site.Params.mobile }} <a href="callto:{{ . }}">Call:
-                                <span class="ml-2">{{ . }}</span> {{ end }}
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
     {{ "<!-- nav bar -->" | safeHTML }}
     <div class="navigation">
         <div class="container">
