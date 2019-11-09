@@ -11,17 +11,9 @@
 
     {{ "<!-- Bootstrap -->" | safeHTML }}
     <link rel="stylesheet" href="{{ "plugins/bootstrap/bootstrap.min.css" | absURL }} ">
-    {{ "<!-- magnific popup -->" | safeHTML }}
-    <link rel="stylesheet" href="{{ "plugins/magnific-popup/magnific-popup.css" | absURL }} ">
-    {{ "<!-- Slick Carousel -->" | safeHTML }}
-    <link rel="stylesheet" href="{{ "plugins/slick/slick.css" | absURL }} ">
-    <link rel="stylesheet" href="{{ "plugins/slick/slick-theme.css" | absURL }} ">
     {{ "<!-- themify icon -->" | safeHTML }}
     <link rel="stylesheet" href="{{ "plugins/themify-icons/themify-icons.css" | absURL }} ">
-    {{ "<!-- animate -->" | safeHTML }}
-    <link rel="stylesheet" href="{{ "plugins/animate/animate.css" | absURL }} ">
-    {{ "<!-- Aos -->" | safeHTML }}
-    <link rel="stylesheet" href="{{ "plugins/aos/aos.css" | absURL }} ">
+    
     {{ "<!-- Main Stylesheet -->" | safeHTML }}
     {{ $styles := resources.Get "css/style.css" | minify}}
     <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
