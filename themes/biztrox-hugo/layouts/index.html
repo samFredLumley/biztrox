@@ -37,37 +37,6 @@
 
 {{ partial "skill.html" . }}
 
-{{ "<!-- work -->" | safeHTML }}
-<section class="section bg-gray hide">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h5 class="section-title-sm">Our Works</h5>
-                <h2 class="section-title section-title-border-gray">Latest Projects</h2>
-            </div>
-        </div>
-        {{ "<!-- work slider -->" | safeHTML }}
-        <div class="row work-slider">
-            {{ range $index, $element:= where .Data.Pages "Type" "project"}}
-            {{ "<!-- project item -->" | safeHTML }}
-            <div class="col-lg-3 col-md-4 col-sm-6 p-0">
-                <div class="position-relative">
-                    <img class="img-fluid w-100" src="{{ .Params.Image | absURL }}" alt="project-image">
-                    <div class="project-info">
-                        <a href="{{ .Permalink }}" class="h4">{{ .Title }}</a>
-                        <p><i class="ti-tag"></i>{{ .Params.Tag }}</p>
-                    </div>
-                </div>
-            </div>
-            {{ end }}
-        </div>
-    </div>
-</section>
-{{ "<!-- /work -->" | safeHTML }}
-
-{{ partial "mission.html" . }}
-
-{{ partial "promoVideo.html" . }}
 
 {{ partial "testimonial.html" . }}
 
