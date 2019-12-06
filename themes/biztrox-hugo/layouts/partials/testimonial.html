@@ -9,17 +9,7 @@
                {{ with $data.testimonial.title }} <h2 class="section-title section-title-border"> {{ . }} </h2> {{ end }}
             </div>
             <div class="col-lg-7 col-md-7 align-self-center pl-0">
-                <div class="testimonial-slider p-5">
-                    {{ "<!-- slider item -->" | safeHTML }}
-                    {{ range $data.testimonial.sliderItem }}
-                    <div>
-                        <i class="testimonial-icon {{ .icon }}"></i>
-                        <p class="text-dark">{{ .content }}</p>
-                        <h4 class="font-weight-normal">{{ .name }}</h4>
-                        <h6 class="font-secondary text-color">{{ .designation }}</h6>
-                    </div>
-                    {{ end }}
-                </div>
+
             </div>
         </div>
     </div>
