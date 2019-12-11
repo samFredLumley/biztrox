@@ -1,9 +1,9 @@
 {{ "<!-- navigation -->" | safeHTML }}
 <header>
     {{ "<!-- nav bar -->" | safeHTML }}
-    <div class="navigation">
+    <div class="navigation bg-gray">
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light bg-gray">
                 <a class="navbar-brand" href="{{ .Site.Params.BaseURL | absURL }}">
                     <img src="{{ .Site.Params.logo | absURL }}" alt="logo">
                 </a>
@@ -16,7 +16,7 @@
                     <ul class="navbar-nav">
 
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ .Site.BaseURL }}{{ .Language.LanguageName | lower }}">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a>
+                            <a class="nav-link nav-active" href="{{ .Site.BaseURL }}{{ .Language.LanguageName | lower }}">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a>
                         </li>
                         {{ range .Site.Menus.nav }}
                         {{ if .HasChildren }}

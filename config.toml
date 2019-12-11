@@ -53,11 +53,6 @@ mailchimpFormName = "b_f95ece2732a6e9925f2e70a61_b1e227529e" # replace this code
     weight = 3
     
     [[Languages.en.menu.nav]]
-    name = "Blog"
-    URL = "/blog"
-    weight = 5
-    
-    [[Languages.en.menu.nav]]
     name = "Contact"
     URL = "/contact"
     weight = 4

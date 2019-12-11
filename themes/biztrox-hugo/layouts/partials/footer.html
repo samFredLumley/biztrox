@@ -47,12 +47,16 @@
             </div>
         </div>
     </div>
+
     {{ "<!-- copyright -->" | safeHTML }}
     <div class="pt-4 pb-3 position-relative">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-5">
+                        
                     <p class="text-white text-center text-md-left">
+                            {{ "<!-- logo -->" | safeHTML }}
+                            <img class="mb-30" src="{{ .Site.Params.footer.logo | absURL }}" alt="logo">
                        {{ with .Site.Params.footer.copyright }} <span class="text-primary">{{ . | safeHTML }}</p> {{ end }}
                 </div>
                 <div class="col-lg-6 col-md-7">
@@ -76,10 +80,7 @@
                 </div>
             </div>
         </div>
-        {{ "<!-- back to top -->" | safeHTML }}
-        <button class="back-to-top">
-            <i class="ti-angle-up"></i>
-        </button>
+
     </div>
 </footer>
 {{ "<!-- /footer -->" | safeHTML }}

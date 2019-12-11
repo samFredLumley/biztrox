@@ -1,11 +1,12 @@
 {{ $data := index .Site.Data .Site.Language.Lang }}
 {{ if $data.contact.enable }}
-
+{{ "<!-- contact -->" | safeHTML }}
 <section class="section">
     <div class="container">
         <div class="row">
             <div class="col-lg-4 offset-lg-1 col-md-5">
-               {{ with $data.contact.title }} <h2 class="section-title">{{ . }}</h2> {{ end }}
+                {{ with $data.contact.title }} <h2 class="section-title section-title-border-half">{{ . }}</h2> {{ end }}
+
                 <ul class="pl-0">
                     {{ range $data.contact.contactList }}
                     {{ "<!-- contact items -->" | safeHTML }}

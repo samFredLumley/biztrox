@@ -772,15 +772,14 @@ code{
 
 .navigation .navbar {
   padding: 0;
-  background: #fff !important;
   position: relative;
 }
 
 .navigation .navbar-brand {
   position: relative;
   left: 0;
-  height: 170px;
-  width: 220px;
+  /* height: 170px;
+  width: 220px; */
   background: #fff;
   text-align: center;
   z-index: 9;
@@ -804,8 +803,8 @@ code{
 .navigation .navbar-brand img {
   position: relative;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  /* -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); */
 }
 
 .navigation .navbar .nav-item {
@@ -819,20 +818,27 @@ code{
 }
 
 .navigation .navbar .nav-item .nav-link {
-  padding: 15px 10px;
+  padding: 0px;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   color: #222;
   text-transform: uppercase;
   transition: .2s ease;
   font-size: 14px;
+  border-bottom: 3px solid transparent;
 }
 
 @media (max-width: 1199px) {
   .navigation .navbar .nav-item .nav-link {
-    font-size: 16px;
+    font-size: 18px;
     /* padding: 15px 6px; */
   }
+}
+
+.nav-active {
+  text-decoration: underline;
 }
 
 @media (max-width: 991px) {
@@ -843,9 +849,18 @@ code{
   }
 }
 
-.navigation .navbar .nav-item .nav-link:hover {
+.navigation .navbar .nav-item {
   color: #317ec7;
 }
+
+.nav-link:hover {
+  border-bottom: 3px solid black !importantç;
+  overflow: hidden; 
+}
+
+.nav-item:hover {
+}
+
 /* 
 .navigation .navbar .nav-item:last-child {
   padding: 28px 0 28px 30px;
