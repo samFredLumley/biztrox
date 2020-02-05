@@ -1,8 +1,8 @@
 ---
 enable: true
 sliderItem:
-- subHeading: Pramo Mitranandan
-  heading: Barrister, Solicitor & Notary hello
+- subHeading: Pramo Mitra
+  heading: Barrister, Solicitor & Notary
   description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
     tempor <br> incididunt ut labore et dolore magna aliqua.
   btn:

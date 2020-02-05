@@ -48,7 +48,7 @@ mailchimpFormName = "b_f95ece2732a6e9925f2e70a61_b1e227529e" # replace this code
     weight = 2
     
     [[Languages.en.menu.nav]]
-    name = "Services"
+    name = "Practice Areas"
     URL = "/service"
     weight = 3
     

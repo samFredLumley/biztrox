@@ -8,6 +8,17 @@
   color: white;
 }
 
+.hero-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+element {
+  --main-red: #ee6970;
+}
+
 
 /* 1.1 typography */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Poppins:300,400,500,600,700|Work+Sans:400,500,600");
@@ -839,6 +850,7 @@ code{
 
 .nav-active {
   text-decoration: underline;
+  color: #ee6970 !important;
 }
 
 @media (max-width: 991px) {
@@ -850,11 +862,12 @@ code{
 }
 
 .navigation .navbar .nav-item {
-  color: #317ec7;
+  color: var(--main-red);
 }
 
 .nav-link:hover {
-  border-bottom: 3px solid black !important;
+  border-bottom: 3px solid #ee6970 !important;
+  color: #ee6970 !important;
   overflow: hidden; 
 }
 
