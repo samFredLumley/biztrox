@@ -19,6 +19,37 @@ element {
   --main-red: #ee6970;
 }
 
+.profile-container {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background: repeating-linear-gradient(
+    135deg,
+    #eaeaea,
+    #eaeaea 1px,
+    rgba(255, 255, 255, 1) 1px,
+    rgba(255, 255, 255, 1) 4px
+  );
+}
+
+.profile-name {
+  position: relative;
+  top: 30px;
+  left: -15px;
+}
+
+.profile {
+  position: absolute;
+  top: 15px;
+  left: -15px;
+  width: 400px;
+  height: 400px;
+  /* object-fit: cover;
+  -webkit-box-shadow: 10px -10px 0px 0px rgb(228, 236, 236);
+  -moz-box-shadow: 10px -10px 0px 0px rgb(228, 236, 236);
+  box-shadow: 10px -10px 0px 0px rgb(228, 236, 236); */
+
+}
 
 /* 1.1 typography */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Poppins:300,400,500,600,700|Work+Sans:400,500,600");
