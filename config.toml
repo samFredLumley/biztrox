@@ -108,18 +108,16 @@ mailchimpFormName = "b_f95ece2732a6e9925f2e70a61_b1e227529e" # replace this code
       content = "Lorem ipsum dolor amet consectetur adipisicing elit sed eiusm tempor incididunt labore dolore magna aliqua enim."
 
       # service links
-      services = "Links"
+      services = "Practice Areas"
 
       # subscribe
       subscribe = "Subscribe"
       subscribeContent = "Lorem ipsum dolor sit amet, consect etur adipisicing. elit sed do eiusmod."
 
       # copyright
-      copyright = "Mitra Law</span> &copy; 2019 All Right Reserved"
+      copyright = "</span> &copy; 2020 Mitra Law"
 
-        [[Languages.en.params.footer.socialIcon]]
-        icon = "ti-twitter-alt"
-        URL = "#"
+
         
         [[Languages.en.params.footer.socialIcon]]
         icon = "ti-linkedin"

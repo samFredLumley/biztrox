@@ -2486,18 +2486,18 @@ blockquote{
 
 /* 25.2 footer link */
 .footer-links {
-  padding-left: 18px;
+  padding-left: 0px;
 }
 
 .footer-links li {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   position: relative;
 }
 
 .footer-links li::before {
   position: absolute;
   font-family: "themify";
-  content: "\e649";
+  /* content: "\e649"; */
   top: 0;
   left: -20px;
   height: 12px;
