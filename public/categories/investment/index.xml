@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Investment on Mitra Law</title>
+    <link>https://mitra-test.netlify.com/categories/investment/</link>
+    <description>Recent content in Investment on Mitra Law</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 23 Sep 2018 11:35:34 +0600</lastBuildDate>
+    
+	<atom:link href="https://mitra-test.netlify.com/categories/investment/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>New Hugo Post</title>
+      <link>https://mitra-test.netlify.com/blog/new-hugo-post/</link>
+      <pubDate>Sun, 23 Sep 2018 11:35:34 +0600</pubDate>
+      
+      <guid>https://mitra-test.netlify.com/blog/new-hugo-post/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
+    </item>
+    
+  </channel>
+</rss>
