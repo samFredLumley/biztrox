@@ -29,7 +29,7 @@ mailchimpFormName = "b_f95ece2732a6e9925f2e70a61_b1e227529e" # replace this code
   
   # English
   [Languages.en]
-  languageName = "En"
+  languageName = ""
   languageCode = "en-us"
   weight = 1
   title = "Mitra Law"
@@ -64,7 +64,7 @@ mailchimpFormName = "b_f95ece2732a6e9925f2e70a61_b1e227529e" # replace this code
       title = "Who We Are"
       description = "Excepteur sint occaecat cupidatat non proident sunt culpa qui officia deserunt mollit anim id est laborum."
       [Languages.en.params.about.btn]
-      enable = false
+      enable = true
       btnText = "Explore More"
       btnURL = "#"
 
