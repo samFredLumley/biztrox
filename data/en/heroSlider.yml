@@ -2,8 +2,9 @@
 enable: true
 sliderItem:
 - subHeading: Pramo Mitra
-  heading: Barrister, Solicitor & Notary
-  description: Genesee Martine has over 70 years combined experience providing effective criminal, family and personal injury law
+  heading: Barrister, Solicitor & Notar
+  description: Genesee Martine has over 70 years combined experience providing effective
+    criminal, family and personal injury law
   btn:
     enable: true
     btnText: Get in touch
